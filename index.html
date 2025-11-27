@@ -2,20 +2,34 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon site Web</title>
+    <title>Mon Portfolio</title>
     <link rel="shortcut icon" href="./pics/bed.png" type="image/png">
     <link rel="stylesheet" href="./css/bases.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-    <h1>Mon Portfolio</h1>
-    <!-- SECTION D'ACCUEIL -->
-<section class="hero">
-    <h2>Bienvenue sur mon portfolio</h2>
-    <p>Étudiant en Master économie de l'entreprise | Economie | Analyse de données</p>
-</section>
 
-</header>
+    <div class="headerall">
+        <h1>Ibrahima C. Bah</h1>
+
+        <nav>
+            <ul>
+                <li class="navbtn"><a href="apropos.html">À Propos</a></li>
+                <li class="navbtn"><a href="competences.html">Compétences</a></li>
+                <li class="navbtn"><a href="portfolio.html">Projets</a></li>
+                <li class="navbtn"><a href="experience.html">Expérience</a></li>
+                <li class="navbtn"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <section class="hero">
+            <h2>Bienvenue sur mon portfolio</h2>
+            <p>Étudiant en Master économie de l'entreprise | Economie | Analyse de données</p>
+            <button onclick="window.location.href='portfolio.html'" style="margin-top:20px; padding:10px 20px; cursor:pointer;">Voir mes projets</button>
+        </section>
+    </div>
 
 </body>
 </html>

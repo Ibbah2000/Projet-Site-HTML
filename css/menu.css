@@ -1,0 +1,31 @@
+
+
+header nav ul {
+    display: flex; 
+    gap: 1.5rem;   
+    align-items: center;
+    width: 60%;
+    margin: 0;     
+    padding: 0;    
+}
+
+header nav ul li {
+    list-style: none; /* Enlève les points devant la liste [cite: 455] */
+    padding: 0.5rem;  /* [cite: 457] */
+    border-radius: 20px; /* [cite: 459] */
+    flex: 1; /* Répartit l'espace équitablement [cite: 461] */
+    text-align: center; /* Pour centrer le texte dans le bouton */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Enlève le soulignement [cite: 466] */
+    font-size: 2.5vh; /* Taille du texte [cite: 468] */
+    font-weight: 400; /* [cite: 470] */
+    color: white;     /* [cite: 472] */
+    transition: 1s;   /* Animation douce [cite: 474] */
+}
+
+/* Changement de couleur au survol (Page 15) */
+header nav ul li a:hover {
+    color: var(--primary-color); 
+}
