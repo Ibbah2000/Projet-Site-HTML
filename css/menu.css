@@ -1,24 +1,47 @@
-.headerall nav ul {
+
+.navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(15, 23, 42, 0.95); 
+    backdrop-filter: blur(10px); 
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-between; 
     align-items: center;
-    padding: 0;
-    margin: 0;
+    padding: 0 5%;
+    border-bottom: 2px solid var(--primary-color);
+    z-index: 1000; 
+    box-sizing: border-box;
 }
 
-.headerall nav ul li {
-    list-style: none;
-    padding: 0.5rem;
-}
-
-.headerall nav ul li a {
-    text-decoration: none;
-    font-size: 2.5vh;
-    font-weight: 400;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
     color: white;
-    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.headerall nav ul li a:hover {
+nav ul {
+    display: flex; 
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cbd5e1; 
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    transition: color 0.3s; 
+}
+
+
+nav ul li a:hover {
     color: var(--primary-color);
 }

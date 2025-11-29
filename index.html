@@ -2,34 +2,91 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Portfolio</title>
-    <link rel="shortcut icon" href="./pics/bed.png" type="image/png">
-    <link rel="stylesheet" href="./css/bases.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ibrahima C. Bah</title>
+    <link rel="stylesheet" href="css/bases.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="headerall">
-        <h1>Ibrahima C. Bah</h1>
-
+    <header class="navbar headerall">
+        <div class="logo">Ibrahima C. Bah</div>
         <nav>
             <ul>
-                <li class="navbtn"><a href="apropos.html">À Propos</a></li>
-                <li class="navbtn"><a href="competences.html">Compétences</a></li>
-                <li class="navbtn"><a href="portfolio.html">Projets</a></li>
-                <li class="navbtn"><a href="experience.html">Expérience</a></li>
-                <li class="navbtn"><a href="contact.html">Contact</a></li>
+                <li><a href="#accueil"><i class="fa-solid fa-house"></i> Accueil</a></li>
+                <li><a href="#apropos"><i class="fa-solid fa-user"></i> À Propos</a></li>
+                <li><a href="#competences"><i class="fa-solid fa-code"></i> Compétences</a></li>
+                <li><a href="#projets"><i class="fa-solid fa-folder-open"></i> Projets</a></li>
+                <li><a href="#parcours"><i class="fa-solid fa-road"></i> Parcours</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
 
-    <div class="content">
-        <section class="hero">
-            <h2>Bienvenue sur mon portfolio</h2>
-            <p>Étudiant en Master économie de l'entreprise | Economie | Analyse de données</p>
-            <button onclick="window.location.href='portfolio.html'" style="margin-top:20px; padding:10px 20px; cursor:pointer;">Voir mes projets</button>
+    <>
+        <section id="accueil" class="full-screen">
+            <div class="hero">
+                <h1>Bienvenue sur mon Portfolio</h1>
+                <p>Étudiant en Master Économie | Data Analyst en devenir</p>
+                <a href="#projets" class="btn">Découvrir mes travaux</a>
+            </div>
         </section>
-    </div>
+        <section id="apropos" class="container">
+            <h2>À Propos de moi</h2>
+            <div class="split-content">
+                <img src="pics/Ma photo.png" alt="Photo de Ibrahima" class="profile-pic">
+                
+                <div class="text-bio" style="color: white;">
+                    <h3>Mon profil</h3>
+                    <p>Passionné par les chiffres et la technologie, je me forme actuellement à l'Université de Tours pour devenir Data Analyst. Je suis rigoureux, curieux et déterminé.</p>
+                    <p>Je cherche un stage de 4 à 6 mois à partir d'avril 2025.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="container">
+            <h2>Mes Compétences</h2>
+            <div class="project-grid">
+                
+                <div class="card">
+                    <i class="fa-solid fa-database icon-large"></i>
+                    <h3>Data Science</h3>
+                    <div class="badge-container">
+                        <span class="badge">Python</span>
+                        <span class="badge">R</span>
+                        <span class="badge">SQL</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-chart-simple icon-large"></i>
+                    <h3>Visualisation</h3>
+                    <div class="badge-container">
+                        <span class="badge">Power BI</span>
+                        <span class="badge">Tableau</span>
+                        <span class="badge">Excel</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-lightbulb icon-large"></i>
+                    <h3>Soft Skills</h3>
+                    <div class="badge-container">
+                        <span class="badge">Communication</span>
+                        <span class="badge">Esprit d'équipe</span>
+                        <span class="badge">Anglais B2</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        </main>
+
+    <footer>
+        <p style="text-align: center; padding: 20px; background: #020617; color: gray; margin: 0;">&copy; 2025 Ibrahima C. Bah - Portfolio Data Analyst</p>
+    </footer>
 
 </body>
 </html>
