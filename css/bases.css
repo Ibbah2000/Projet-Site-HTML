@@ -98,9 +98,9 @@ h1 {
     line-height: 1.6;
 }
 
-/* --- STYLE COMPÉTENCES (GRID) --- */
+
 .project-grid {
-    display: grid; /* Consigne prof : CSS Grid */
+    display: grid; 
     /* Crée des colonnes automatiques de 300px min */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -116,7 +116,7 @@ h1 {
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Animation : ça monte ! */
+    transform: translateY(-10px); 
     border-color: var(--primary-color);
 }
 
@@ -126,7 +126,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* --- BADGES (PILULES VIOLETTES) --- */
+
 .badge-container {
     display: flex;
     flex-wrap: wrap;
@@ -144,9 +144,158 @@ h1 {
     font-size: 0.9rem;
 }
 
-/* Utilisation de :nth-child (Consigne prof) */
-/* Un badge sur deux sera légèrement différent */
+
 .badge:nth-child(even) {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.3);
+}
+
+.project-card {
+    padding: 0; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    filter: grayscale(80%); 
+    transition: filter 0.4s, transform 0.4s;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.project-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05); 
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.github-placeholder {
+    height: 180px;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: white;
+}
+
+.btn-small {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.btn-small:hover {
+    border-color: var(--primary-color);
+}
+
+
+.timeline {
+    border-left: 3px solid var(--primary-color); 
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -49px; 
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: 3px solid var(--bg-color); 
+}
+
+.date {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+    opacity: 0.8; 
+}
+
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #475569;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: rgba(139, 92, 246, 0.05);
+}
+
+
+@media (max-width: 768px) {
+    .contact-container, .split-content {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
 }
