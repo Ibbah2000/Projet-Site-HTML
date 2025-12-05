@@ -2,10 +2,204 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon site Web</title>
-    <link rel="shortcut icon" href="./pics/bed.png" type="image/png">
-    <link rel="stylesheet" href="./css/bases.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ibrahima C. Bah</title>
+    <link rel="stylesheet" href="css/bases.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
+    <header class="navbar headerall">
+        <div class="logo">Ibrahima C. Bah</div>
+        <nav>
+            <ul>
+                <li><a href="#accueil"><i class="fa-solid fa-house"></i> Accueil</a></li>
+                <li><a href="#apropos"><i class="fa-solid fa-user"></i> À Propos</a></li>
+                <li><a href="#competences"><i class="fa-solid fa-code"></i> Compétences</a></li>
+                <li><a href="#projets"><i class="fa-solid fa-folder-open"></i> Projets</a></li>
+                <li><a href="#parcours"><i class="fa-solid fa-road"></i> Parcours</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <>
+        <section id="accueil" class="full-screen">
+            <div class="hero">
+                <h1>Bienvenue sur mon Portfolio</h1>
+                <p>Étudiant en Master 1 Économie de l'Entreprise et des Marchés | Data Analyst en devenir</p>
+                <a href="#projets" class="btn">Découvrir mes travaux</a>
+            </div>
+        </section>
+        <section id="apropos" class="container">
+            <h2>À Propos de moi</h2>
+            <div class="split-content">
+                <img src="pics/Ma photo.png" alt="Photo de Ibrahima" class="profile-pic">
+                
+                <div class="text-bio" style="color: white;">
+                    <h3>Mon profil</h3>
+                    <p>Bonjour,
+Je m’appelle Ibrahima et je suis actuellement en Master 1 Économie d’Entreprise et des Marchés  à l’Université de Tours..</p>
+                    <p>Mon objectif ? Mettre mes compétences en statistiques, en économétrie et en analyse de données (R, Python, Excel, SQL) au service de projets concrets et utiles à la prise de décision.
+Mon parcours universitaire m’a permis d’acquérir une solide base en modélisation économique et en analyse quantitative. Aujourd’hui, je souhaite appliquer ces connaissances dans un cadre professionnel, aux côtés d’équipes qui utilisent la donnée pour répondre à de vrais enjeux.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="container">
+            <h2>Mes Compétences</h2>
+            <div class="project-grid">
+                
+                <div class="card">
+                    <i class="fa-solid fa-database icon-large"></i>
+                    <h3>Data Science</h3>
+                    <div class="badge-container">
+                        <span class="badge">Python</span>
+                        <span class="badge">R</span>
+                        <span class="badge">SQL</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-chart-simple icon-large"></i>
+                    <h3>Visualisation</h3>
+                    <div class="badge-container">
+                        <span class="badge">Power BI</span>
+                        <span class="badge">Tableau</span>
+                        <span class="badge">Excel</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-lightbulb icon-large"></i>
+                    <h3>Soft Skills</h3>
+                    <div class="badge-container">
+                        <span class="badge">Communication</span>
+                        <span class="badge">Esprit d'équipe</span>
+                        <span class="badge">Anglais B2</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="projets" class="container">
+            <h2>Mes Projets</h2>
+            <div class="project-grid">
+                
+                <div class="card project-card">
+                    <img src="pics/projet1.jpg" alt="Dashboard Analyse DPE">
+                    <div class="card-content">
+                        <h3>Dashboard DPE</h3>
+                        <p>Analyse de données énergétiques et visualisation interactive sous R Shiny.</p>
+                        <div class="badge-container">
+                            <span class="badge">R Studio</span>
+                            <span class="badge">Shiny</span>
+                        </div>
+                        <a href="#" class="btn-small">Voir le détail</a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <img src="pics/projet2.jpg" alt="Projet Analyse">
+                    <div class="card-content">
+                        <h3>Étude Statistique</h3>
+                        <p>Traitement de données et modélisation économétrique avancée.</p>
+                        <div class="badge-container">
+                            <span class="badge">Python</span>
+                            <span class="badge">Pandas</span>
+                        </div>
+                        <a href="#" class="btn-small">Voir le rapport</a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="github-placeholder">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mon GitHub</h3>
+                        <p>Retrouvez l'ensemble de mes codes sources </p>
+                        <a href="https://github.com/ibbah2000" target="_blank" class="btn-small">Accéder au repo</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="parcours" class="container">
+            <h2>Mon Parcours</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <span class="date">2025 - Présent</span>
+                    <h3>Master 1 Économie de l'Entreprise</h3>
+                    <p>Université de Tours - Spécialisation Data & Marchés</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="date">2024 - 2025</span>
+                    <h3>Licence 3 Économie Appliquée</h3>
+                    <p>Université d'Angers - Mention Bien</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="date">Été 2025</span>
+                    <h3>Auxiliaire d'été - Société Générale</h3>
+                    <p>Gestion client, archivage numérique et mise à jour de bases de données.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="date">2019 - 2022</span>
+                    <h3>Licence Mathématiques</h3>
+                    <p>Université de Labé (Guinée)</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Me Contacter</h2>
+            <div class="contact-container">
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>ibrahimacababah@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>06 05 81 09 53</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="fa-brands fa-linkedin"></i></div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/ibrahima-caba-bah-3a8419258" target="_blank" style="color:var(--primary-color);">Mon Profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="card contact-form">
+                    <input type="text" placeholder="Votre nom" class="form-input" required>
+                    <input type="email" placeholder="Votre email" class="form-input" required>
+                    <textarea rows="5" placeholder="Votre message" class="form-input" required></textarea>
+                    <button type="submit" class="btn" style="width:100%;">Envoyer</button>
+                </form>
+
+            </div>
+        </section>
+        </main>
+
+    <footer>
+        <p style="text-align: center; padding: 20px; background: #020617; color: gray; margin: 0;">&copy; 2025 Ibrahima C. Bah - Portfolio Data Analyst</p>
+    </footer>
+
 </body>
 </html>
